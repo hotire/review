@@ -1,4 +1,4 @@
-package com.github.hotire.review;
+package com.github.hotire.review.common;
 
 import com.github.hotire.review.strategy.ReviewStrategy;
 import lombok.Getter;

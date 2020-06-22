@@ -1,5 +1,6 @@
-package com.github.hotire.review;
+package com.github.hotire.review.account;
 
+import com.github.hotire.review.common.Review;
 import com.github.hotire.review.strategy.ReviewStrategy;
 import reactor.core.publisher.Mono;
 

@@ -1,5 +1,7 @@
-package com.github.hotire.review;
+package com.github.hotire.review.common;
 
+import com.github.hotire.review.account.AccountAraStrategy;
+import com.github.hotire.review.account.AccountLmpStrategy;
 import com.github.hotire.review.strategy.StrategyDefinition;
 import com.github.hotire.review.strategy.StrategyDefinitions;
 

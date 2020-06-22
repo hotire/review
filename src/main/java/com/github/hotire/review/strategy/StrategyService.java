@@ -1,6 +1,6 @@
 package com.github.hotire.review.strategy;
 
-import com.github.hotire.review.ReviewType;
+import com.github.hotire.review.common.ReviewType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
 

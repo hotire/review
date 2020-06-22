@@ -1,6 +1,6 @@
 package com.github.hotire.review.strategy;
 
-import com.github.hotire.review.Review;
+import com.github.hotire.review.common.Review;
 import reactor.core.publisher.Mono;
 
 import java.util.function.Function;
