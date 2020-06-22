@@ -1,5 +1,6 @@
-package com.github.hotire.review.common;
+package com.github.hotire.review.common.entity;
 
+import com.github.hotire.review.common.model.ReviewType;
 import lombok.Getter;
 
 import javax.persistence.Entity;

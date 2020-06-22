@@ -1,7 +1,8 @@
-package com.github.hotire.review.common;
+package com.github.hotire.review.common.model;
 
-import com.github.hotire.review.strategy.ReviewRepository;
-import com.github.hotire.review.strategy.StrategyService;
+import com.github.hotire.review.common.entity.Review;
+import com.github.hotire.review.common.repository.ReviewRepository;
+import com.github.hotire.review.common.strategy.StrategyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

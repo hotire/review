@@ -1,14 +1,16 @@
-package com.github.hotire.review.strategy;
+package com.github.hotire.review.common.strategy;
 
-import com.github.hotire.review.common.ReviewType;
+import com.github.hotire.review.common.model.ReviewType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@Service
 @RequiredArgsConstructor
 public class StrategyService {
 

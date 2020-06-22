@@ -1,9 +1,9 @@
-package com.github.hotire.review.common;
+package com.github.hotire.review.common.model;
 
 import com.github.hotire.review.account.AccountAraStrategy;
 import com.github.hotire.review.account.AccountLmpStrategy;
-import com.github.hotire.review.strategy.StrategyDefinition;
-import com.github.hotire.review.strategy.StrategyDefinitions;
+import com.github.hotire.review.common.strategy.StrategyDefinition;
+import com.github.hotire.review.common.strategy.StrategyDefinitions;
 
 public enum ReviewType {
     @StrategyDefinitions(

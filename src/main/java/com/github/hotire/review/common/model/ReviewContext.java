@@ -1,6 +1,7 @@
-package com.github.hotire.review.common;
+package com.github.hotire.review.common.model;
 
-import com.github.hotire.review.strategy.ReviewStrategy;
+import com.github.hotire.review.common.entity.Review;
+import com.github.hotire.review.common.strategy.ReviewStrategy;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;

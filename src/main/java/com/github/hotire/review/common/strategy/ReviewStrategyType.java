@@ -1,4 +1,4 @@
-package com.github.hotire.review.strategy;
+package com.github.hotire.review.common.strategy;
 
 public enum ReviewStrategyType {
     ARA {

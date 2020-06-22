@@ -1,4 +1,4 @@
-package com.github.hotire.review.strategy;
+package com.github.hotire.review.common.strategy;
 
 public @interface StrategyDefinition {
     int order() default 1;
