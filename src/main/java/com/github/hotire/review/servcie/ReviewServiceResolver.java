@@ -16,8 +16,9 @@ import static java.util.stream.Collectors.toMap;
 public class ReviewServiceResolver {
 
     private final Map<ReviewType, Map<ReviewStrategy, Object>> beanMap;
+    private final ReviewStatusMappingHandler mappingHandler;
 
-    public ReviewServiceResolver(ApplicationContext context) {
+    public ReviewServiceResolver(ApplicationContext context, ReviewStatusMappingHandler mappingHandler) {
         final Map<String, Object> map = context.getBeansWithAnnotation(ReviewComponent.class);
         beanMap = Arrays.stream(ReviewType.values())
               .collect(toMap(r -> r, r -> new HashMap<>()));
@@ -27,6 +28,8 @@ public class ReviewServiceResolver {
             beanMap.get(reviewComponent.type())
                    .put(reviewComponent.strategy(), o);
         });
+
+        this.mappingHandler = mappingHandler;
     }
 
     public ReviewService resolve(ReviewType reviewType, ReviewStrategy reviewStrategy) {
