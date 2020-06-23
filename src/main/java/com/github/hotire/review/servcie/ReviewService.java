@@ -10,4 +10,7 @@ public interface ReviewService {
     default Mono<Review> reject(Review review) { return Mono.just(review); }
     default Mono<Review> pend(Review review) { return Mono.just(review); }
     default Mono<Review> review(Review review) { return Mono.just(review); }
+    default boolean support(Review review) {
+        return false;
+    }
 }

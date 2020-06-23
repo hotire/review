@@ -1,11 +1,11 @@
 package com.github.hotire.review.common.model;
 
+import com.github.hotire.review.common.entity.Review;
+import com.github.hotire.review.servcie.ReviewStrategy;
 import lombok.Data;
 
 @Data
 public class ReviewEvent {
-    private String id;
-    private ReviewType reviewType;
-    private ReviewStatus reviewStatus;
-    private String content;
+    private Review review;
+    private ReviewStrategy reviewStrategy;
 }

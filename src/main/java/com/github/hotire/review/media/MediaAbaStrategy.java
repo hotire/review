@@ -4,6 +4,6 @@ import com.github.hotire.review.common.strategy.ReviewStrategy;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MediaLmpStrategy implements ReviewStrategy {
+public class MediaAbaStrategy implements ReviewStrategy {
 
 }

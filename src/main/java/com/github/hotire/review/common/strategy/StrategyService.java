@@ -18,7 +18,7 @@ public class StrategyService {
 
     public List<ReviewStrategy> findReviewStrategies(final ReviewType reviewType) {
         final StrategyDefinitions strategyDefinitions = reviewType.getClass().getDeclaredAnnotation(StrategyDefinitions.class);
-        return Stream.of(strategyDefinitions.araStrategy(), strategyDefinitions.lmpStrategy())
+        return Stream.of(strategyDefinitions.araStrategy(), strategyDefinitions.abaStrategy())
                      .sorted(Comparator.comparingInt(StrategyDefinition::order))
                      .collect(Collectors.toList())
                      .stream()
@@ -31,6 +31,5 @@ public class StrategyService {
         final StrategyDefinitions strategyDefinitions = reviewType.getClass().getDeclaredAnnotation(StrategyDefinitions.class);
         return context.getBean(reviewStrategyType.getStrategyDefinition(strategyDefinitions).value());
     }
-
 
 }

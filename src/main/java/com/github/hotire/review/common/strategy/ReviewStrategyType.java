@@ -7,13 +7,15 @@ public enum ReviewStrategyType {
             return strategyDefinitions.araStrategy();
         }
     },
-    LMP {
+    ABA {
         @Override
         StrategyDefinition getStrategyDefinition(StrategyDefinitions strategyDefinitions) {
-            return strategyDefinitions.lmpStrategy();
+            return strategyDefinitions.abaStrategy();
         }
     }
     ;
+
+
 
     abstract StrategyDefinition getStrategyDefinition(final StrategyDefinitions strategyDefinitions);
 }
