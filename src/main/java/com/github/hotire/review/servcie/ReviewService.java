@@ -1,9 +1,9 @@
-package com.github.hotire.review.common.strategy;
+package com.github.hotire.review.servcie;
 
 import com.github.hotire.review.common.entity.Review;
 import reactor.core.publisher.Mono;
 
-public interface ReviewStrategy {
+public interface ReviewService {
     default Mono<Review> approve(Review review) {
         return Mono.just(review);
     }

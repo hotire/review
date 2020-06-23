@@ -15,23 +15,22 @@ public class ReviewContext {
     @Getter
     private final Review review;
     @Getter
-    private final List<Mono<Review>> strategies = new ArrayList<>();
+    private final List<ReviewStrategy> strategies = new ArrayList<>();
 
     public ReviewContext addStrategy(final ReviewStrategy strategy) {
-        this.strategies.add(strategy.apply(review));
+        this.strategies.add(strategy);
         return this;
     }
 
     public ReviewContext addStrategies(final List<ReviewStrategy> strategy) {
         this.strategies.addAll(strategy.stream()
-                                       .map(reviewService -> reviewService.apply(review))
+                                       .map(reviewService -> reviewService)
                                        .collect(Collectors.toList()));
         return this;
     }
 
     public Mono<Review> execute() {
-        return Mono.when(strategies)
-                   .thenReturn(review);
+       return Mono.empty();
     }
 
     public ReviewType getReviewType() {

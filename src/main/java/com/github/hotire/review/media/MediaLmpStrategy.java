@@ -1,9 +1,9 @@
-package com.github.hotire.review.account;
+package com.github.hotire.review.media;
 
 import com.github.hotire.review.common.strategy.ReviewStrategy;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AccountAraStrategy implements ReviewStrategy {
+public class MediaLmpStrategy implements ReviewStrategy {
 
 }
