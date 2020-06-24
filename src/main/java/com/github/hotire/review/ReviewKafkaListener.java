@@ -22,7 +22,5 @@ public class ReviewKafkaListener {
         final Review review = reviewRepository.findById(reviewEvent.getReview().getId()).orElse(new Review(reviewEvent.getReview().getReviewType()));
 
         reviewServiceResolver.resolve(review.getReviewType(), reviewEvent.getReviewStrategy());
-
-
     }
 }
