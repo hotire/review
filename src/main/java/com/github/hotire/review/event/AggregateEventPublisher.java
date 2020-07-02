@@ -20,5 +20,5 @@ public abstract class AggregateEventPublisher<T extends AbstractAggregateRoot<T>
         return (T) this;
     }
 
-    abstract EventCallbackAware<T> getEvent();
+    public abstract EventCallbackAware<T> getEvent();
 }
